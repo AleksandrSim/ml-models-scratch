@@ -39,14 +39,6 @@ y_valid = np.array([one_hot_code_encoding(i) for i in y_valid])
 
 
 
-def sigmoid(self, x, derivative=False):
-    if derivative:
-        return (np.exp(-x))/((np.exp(-x)+1)**2)
-    return 1/(1 + np.exp(-x))
-
-def softmax(self, x):
-    exps = np.exp(x - x.max())
-    return exps / np.sum(exps, axis=0)
 
 class DeepNeuralNetwork():
     def __init__(self, sizes, epochs=150, l_rate=0.05):
@@ -146,13 +138,6 @@ class DeepNeuralNetwork():
             
 
 
-
-
-net = DeepNeuralNetwork(sizes=[784, 128, 64, 10])
-
-
-
-net.train(X,  y, X_valid, y_valid)
 
 
 
