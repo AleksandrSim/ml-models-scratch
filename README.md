@@ -3,4 +3,4 @@ In the following repository, I will develop various machine learning models from
 
 
 
-[***Decision Treee***](https://github.com/AleksandrSim/ml-models-scratch/blob/main/decision_tree/ID3.py)
+[***Decision Treee**](https://github.com/AleksandrSim/ml-models-scratch/blob/main/decision_tree/ID3.py)
